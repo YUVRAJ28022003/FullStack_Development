@@ -1,0 +1,16 @@
+NaN - not a number 
+
+primitive data type
+
+string
+boolean 
+Number
+null
+defined 
+symbol
+
+non-primitive data type
+
+objects
+-array
+-function objects

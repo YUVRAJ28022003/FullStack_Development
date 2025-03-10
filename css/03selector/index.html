@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1.universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* 2.type selector */
+      p {
+        font-size: 16px;
+        margin-top: 20px;
+        padding-top: 1px;
+      }
+      /* 3.class selector */
+      .highlight {
+        background-color: #868080;
+      }
+
+      /* 4.id selector */
+      #header {
+        background-color: #333;
+      }
+
+      /* 5.attribute selector */
+      input [type="text"] {
+        border: 1px solid #21a2c9;
+      }
+      /* 6.descedent selector */
+      article p {
+        font-style: italic;
+        background-color: #1a1a1a;
+        color: aliceblue;
+      }
+      /* 7.child selector */
+      div > p {
+        list-style-type: square;
+        background-color: #7e0c0c;
+      }
+      /* 8.adjacent sibling selector */
+      h1 + p {
+        font-weight: bold;
+      }
+      /* 9.general sibling selector */
+      h2 ~ p {
+        color: beige;
+      }
+      /* 10.pseudo-class selector */
+      a:hover {
+        background-color: blanchedalmond;
+        padding: 5px;
+      }
+      /* 11.pseudo-element selector */
+      p::first-letter {
+      }
+      /* 12.grouping selector */
+      h1,
+      h2,
+      h3 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">hi i am header</header>
+
+    <h1>main heading</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p class="highlight">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis,
+      incidunt laborum consectetur, quo, tempora modi sit sint accusamus esse
+    </p>
+
+    <a href="">hover over the button</a>
+
+    <input type="text" placeholder="enter text here" />
+
+    <h3>heading 3</h3>
+
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque
+        ipsam recusandae unde culpa itaque repellat omnis similique nisi
+        delectus. ed quasi?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque
+        ipsam recusandae unde culpa itaque repellat omnis similique nisi
+        delectus. ed quasi?
+      </p>
+      <div>
+        <p>
+          Autem voluptas quae culpa ipsum quos eveniet eaque! Iure eius
+          voluptatum optio aliquam neque assumenda totam temporibus odio eos
+          corporis eligendi cumque sequi tempora dolores, aliquid dolorem. Quod,
+          autem reiciendis
+        </p>
+      </div>
+    </article>
+
+    <ul>
+      <li>direct child list items</li>
+      <li>
+        another direct child
+        <ul>
+          <li>this is not a direct child of the first ul .</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div>
+      <p>i am a child</p>
+      <p>i am a child</p>
+      <section>
+        <p>i am a descendant</p>
+      </section>
+    </div>
+    
+  </body>
+</html>

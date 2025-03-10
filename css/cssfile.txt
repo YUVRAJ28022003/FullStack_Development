@@ -1,0 +1,14 @@
+1} inline function 
+2} selectors - 
+- add classes - to select element we use classes
+- 
+3} flex box
+        display: flex;
+        justify-content: center;space between , space around
+        align-items: center;
+4} vh- viewport
+
+5}BLOCK AND INLINE ELEMENTS
+6}PSEUDO ELEMENTS
+7}transform
+8}transition

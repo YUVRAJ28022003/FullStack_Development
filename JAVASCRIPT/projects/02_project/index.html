@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="blogging.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BlogOps</title>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <img src="blogging.png" id="logo" alt="" /> <a href="#">BlogOps</a>
+      </div>
+      <div>
+        <a href="#">ABOUT</a>
+        <a href="#blogs">BLOGS</a>
+        <a href="#contact">CONTACT US</a>
+      </div>
+      <div>
+        <img src="dots.png" id="logo" alt="" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="div-container">
+        <h1>
+          <img src="computer.png" id="logo" alt="" /> Write a blog here...
+        </h1>
+        <input type="text" id="addTitle" placeholder="Title of the Blog" />
+        <textarea
+          placeholder="write your blog here..."
+          id="addContent"
+        ></textarea>
+        <button id="addPost">POST</button>
+      </div>
+    </div>
+    <section class="div-container" id="blogs">
+      <h1>MY BLOGS</h1>
+      <div id="grid-container"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

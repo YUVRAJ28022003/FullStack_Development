@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .box-model-demo {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        border: 5px solid #333;
+        margin: 30px;
+        background-color: #f0f0f0;
+      }
+      .content-box {
+        box-sizing: content-box;
+        background-color: #ffcccc;
+      }
+      .border-box {
+        box-sizing: border-box;
+        background-color: #ccffcc;
+      }
+      .box-model-demo p {
+        margin: 0;
+      }
+      .inline-example {
+        display: block;
+        background-color: #cce6ff;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+      }
+      .block-example {
+        background-color: #cce6ff;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css box model example</h1>
+    <h2>content-box ()default</h2>
+    <div class="box-model-demo content-box">
+      <p>this is a content -box model</p>
+      <p>Width: 300px + 40px (padding) + 10px (border) = 350px</p>
+      <p>Height: 200px + 40px (padding) + 10px (border) = 250px</p>
+    </div>
+    <h2>border-box(default)</h2>
+    <div class="box-model-demo border-box">
+      <p>this is a border -box model</p>
+      <p>Width: 300px (including padding and border)</p>
+      <p>Height: 200px (including padding and border)</p>
+    </div>
+    <h2>INLINE VS BLOCK ELEMENT</h2>
+    <div>
+      <p>
+        <span class="inline-example">THIS IS A inline element</span> Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Assumenda harum odit
+        laboriosam sit
+      </p>
+    </div>
+    <div class="block-example">
+      THIS IS A BLOCK ELEMENT Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Excepturi expedita, atque minus quasi ratione perspiciatis sunt
+      soluta aperiam eius unde, ipsam accusamus. Ipsam eaque dolorem quidem
+      magni fugiat! Cumque, quia! Nobis odit debitis, non ut quos fugiat
+      sapiente vero libero tempore deserunt, quasi ad nulla reiciendis officia
+      dicta cupiditate esse. Accusantium unde, corrupti possimus nulla
+      voluptatem culpa illo aperiam perspiciatis?
+    </div>
+  </body>
+</html>
